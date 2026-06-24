@@ -1,0 +1,37 @@
+name: iOS unsigned IPA
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  unsigned-ipa:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Xcode version
+        run: xcodebuild -version
+
+      - name: Build and package unsigned IPA
+        run: bash scripts/package-unsigned-ipa.sh
+
+      - name: Upload unsigned IPA
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: OtsariaReader-unsigned-ipa
+          path: |
+            build/output/unsigned-ipa/OtsariaReader-unsigned.ipa
+            build/output/unsigned-ipa/README.txt
+          if-no-files-found: error
+
+      - name: Upload build logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unsigned-ipa-build-logs
+          path: build/logs
+          if-no-files-found: ignore
