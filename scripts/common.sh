@@ -32,6 +32,14 @@ require_command() {
   command -v "$1" >/dev/null 2>&1 || fail "Missing required command: $1"
 }
 
+regenerate_xcode_project_if_possible() {
+  local generator="${SCRIPT_DIR}/regenerate-xcode-project.py"
+  if [ -f "${generator}" ]; then
+    log "Regenerating Xcode project file before build"
+    python3 "${generator}"
+  fi
+}
+
 repair_xcode_project_if_needed() {
   [ -f "${PROJECT_FILE}" ] || return 0
 
@@ -48,6 +56,7 @@ PY
   fi
 }
 
+regenerate_xcode_project_if_possible
 repair_xcode_project_if_needed
 
 print_environment() {
