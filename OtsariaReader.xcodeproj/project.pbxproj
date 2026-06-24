@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7200C3755505B4C571DF7407 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F51C0A4D17EAE1A45DD36BC /* AppContainer.swift */; };
+		6DB8AA8873252113169525A0 /* OtsariaReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AF68BBDCE2B87548FC2266 /* OtsariaReaderApp.swift */; };
+		0C34AD49B0187F414759668B /* RootSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987CBFD8FC636EBAAA8AA115 /* RootSplitView.swift */; };
+		66131F1F0E9DA0FBE8926059 /* SQLiteConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043EE376171F683381CCEB61 /* SQLiteConnection.swift */; };
+		5A2DB528A4ACADF04668BB0F /* SQLiteError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF605CA33D0D77B15374A77C /* SQLiteError.swift */; };
+		9150D1C40E1B4226A035770C /* SQLiteStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08F7825C9E23CC016DDA4F3 /* SQLiteStatement.swift */; };
+		A08467F008A575205B19E0AF /* SecurityScopedAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D528E56BC0085165106B6A /* SecurityScopedAccess.swift */; };
+		D5307EC4ADB90AD40691571A /* SecurityScopedBookmarkStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757505CC16129C55EA607100 /* SecurityScopedBookmarkStore.swift */; };
+		5554E7A18A235E88131469B1 /* String+OtsariaText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F0FFE33E2EF75A45ABA489 /* String+OtsariaText.swift */; };
+		570984899AF2D98023229B64 /* UTType+SQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D72A9882280D5697246B96 /* UTType+SQLite.swift */; };
+		8A6AE09932EE7F4E3880B5DD /* OtsariaSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159D7D3932B7EF397A871148 /* OtsariaSchema.swift */; };
+		315695758242BCF124584023 /* SQLiteBookTextRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A309A0949A6744CF0A83BCE7 /* SQLiteBookTextRepository.swift */; };
+		4DF2040F99FD143A2D93F78F /* SQLiteLibraryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23DA49088662E9035201E6A /* SQLiteLibraryRepository.swift */; };
+		4F37EFA11DE16FA9872A93B9 /* SQLiteSourceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763F28D15202EA4E34FDD551 /* SQLiteSourceRepository.swift */; };
+		8E8E30CBF8D13C9CD7CBB4F5 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5553D90B14C9A70D7C0796D /* Book.swift */; };
+		77C87025767DE2AB23DD5928 /* BookLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482B532F7AEDA5BDBE8FE4C4 /* BookLine.swift */; };
+		F99189358B3C56B7F53424FC /* LibraryCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ECCF298142CE569B1EDD9E /* LibraryCategory.swift */; };
+		6B71EA92B816D7ADEF0EA219 /* LibraryNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DEC535F6A4F71B3B0FEED2 /* LibraryNode.swift */; };
+		B965EB7ABD2F9A55A1B6F372 /* LinkedSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E44C2402DE24D27539FA8B /* LinkedSource.swift */; };
+		AF28122A0D6AF7CA34B71F8E /* SourceSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8C16AA07BB4B813C48A333 /* SourceSection.swift */; };
+		DB3F7E9BEC83030634AFF0FE /* TOCEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DADB776371CD14C65A781B /* TOCEntry.swift */; };
+		932EDEAB51E8FCEE0D737EFE /* BookTextRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F91564E3BAA70877B03645 /* BookTextRepository.swift */; };
+		545D37B9CE32E0A10AB13C25 /* LibraryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113748EFDFDCB1623FFC245 /* LibraryRepository.swift */; };
+		A9EC62E6F56525E7CE660FDF /* SourceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF37B012CC532F7B4AFF3C /* SourceRepository.swift */; };
+		5A1BBDD0084FBEC935DD0379 /* BookResultRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E23EF3429A44DB1720A3BF /* BookResultRow.swift */; };
+		620B5E61B64C300BA5A0FFBE /* LibraryNodeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D26A01618D16CF0EBE09A53 /* LibraryNodeRow.swift */; };
+		1C9BAEF32226C146BA982F91 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04345AE0E3166AFDB2304D85 /* LibraryView.swift */; };
+		8E5B4550801F0FC26543B3BE /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD276371D486D7D071F821B0 /* LibraryViewModel.swift */; };
+		7DC1C9B2FB80A9067E07633C /* ReaderLineRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB49C7E803EBD6DAA9FDF9F /* ReaderLineRow.swift */; };
+		C140BD6D6347D033796CB554 /* ReaderPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFBA316E5E313013C63D49C /* ReaderPlaceholderView.swift */; };
+		397777D2C4F702094243DCAC /* ReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250861F014EC4B1C412F5972 /* ReaderView.swift */; };
+		EB703099CEF12080CC8D3E50 /* ReaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EF531129914BEA20791C95 /* ReaderViewModel.swift */; };
+		8417260C742137BED6EAA41F /* ReaderSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B502BE76A6D2FC57679FC6B9 /* ReaderSettingsView.swift */; };
+		3110DF51312ACF39CB3979B5 /* LinkedSourceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0EFB1C36D8AF59AD025EE /* LinkedSourceRow.swift */; };
+		39A2B85E8326C213BF802D54 /* SourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F538B934B52B1E070026A05 /* SourcesView.swift */; };
+		67F095C3DC9C8AA1534E6671 /* SourcesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C202E3B87DFF1BF3F968801B /* SourcesViewModel.swift */; };
+		37E5194AD5A5E1834C9B2581 /* DatabaseRequiredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BA79C149EA9B3B3033120D /* DatabaseRequiredView.swift */; };
+		26C313C6A850131AB34DD079 /* ErrorStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFB2F8C6DC925E9075C3CB /* ErrorStateView.swift */; };
+		C43E9C03CF7DB1B8255B7601 /* LoadingStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B50CF0A99B2FC9518A1FFA /* LoadingStateView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8781C570CE2D0B6A18F2DECF /* OtsariaReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OtsariaReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F51C0A4D17EAE1A45DD36BC /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		59AF68BBDCE2B87548FC2266 /* OtsariaReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtsariaReaderApp.swift; sourceTree = "<group>"; };
+		987CBFD8FC636EBAAA8AA115 /* RootSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootSplitView.swift; sourceTree = "<group>"; };
+		043EE376171F683381CCEB61 /* SQLiteConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteConnection.swift; sourceTree = "<group>"; };
+		CF605CA33D0D77B15374A77C /* SQLiteError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteError.swift; sourceTree = "<group>"; };
+		E08F7825C9E23CC016DDA4F3 /* SQLiteStatement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteStatement.swift; sourceTree = "<group>"; };
+		73D528E56BC0085165106B6A /* SecurityScopedAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityScopedAccess.swift; sourceTree = "<group>"; };
+		757505CC16129C55EA607100 /* SecurityScopedBookmarkStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityScopedBookmarkStore.swift; sourceTree = "<group>"; };
+		95F0FFE33E2EF75A45ABA489 /* String+OtsariaText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String+OtsariaText.swift; sourceTree = "<group>"; };
+		47D72A9882280D5697246B96 /* UTType+SQLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTType+SQLite.swift; sourceTree = "<group>"; };
+		159D7D3932B7EF397A871148 /* OtsariaSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtsariaSchema.swift; sourceTree = "<group>"; };
+		A309A0949A6744CF0A83BCE7 /* SQLiteBookTextRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteBookTextRepository.swift; sourceTree = "<group>"; };
+		B23DA49088662E9035201E6A /* SQLiteLibraryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteLibraryRepository.swift; sourceTree = "<group>"; };
+		763F28D15202EA4E34FDD551 /* SQLiteSourceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteSourceRepository.swift; sourceTree = "<group>"; };
+		B5553D90B14C9A70D7C0796D /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		482B532F7AEDA5BDBE8FE4C4 /* BookLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookLine.swift; sourceTree = "<group>"; };
+		E1ECCF298142CE569B1EDD9E /* LibraryCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCategory.swift; sourceTree = "<group>"; };
+		86DEC535F6A4F71B3B0FEED2 /* LibraryNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryNode.swift; sourceTree = "<group>"; };
+		73E44C2402DE24D27539FA8B /* LinkedSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedSource.swift; sourceTree = "<group>"; };
+		EE8C16AA07BB4B813C48A333 /* SourceSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceSection.swift; sourceTree = "<group>"; };
+		13DADB776371CD14C65A781B /* TOCEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOCEntry.swift; sourceTree = "<group>"; };
+		F3F91564E3BAA70877B03645 /* BookTextRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTextRepository.swift; sourceTree = "<group>"; };
+		1113748EFDFDCB1623FFC245 /* LibraryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryRepository.swift; sourceTree = "<group>"; };
+		D1AF37B012CC532F7B4AFF3C /* SourceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceRepository.swift; sourceTree = "<group>"; };
+		E1E23EF3429A44DB1720A3BF /* BookResultRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookResultRow.swift; sourceTree = "<group>"; };
+		7D26A01618D16CF0EBE09A53 /* LibraryNodeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryNodeRow.swift; sourceTree = "<group>"; };
+		04345AE0E3166AFDB2304D85 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		CD276371D486D7D071F821B0 /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
+		CEB49C7E803EBD6DAA9FDF9F /* ReaderLineRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderLineRow.swift; sourceTree = "<group>"; };
+		EEFBA316E5E313013C63D49C /* ReaderPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderPlaceholderView.swift; sourceTree = "<group>"; };
+		250861F014EC4B1C412F5972 /* ReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderView.swift; sourceTree = "<group>"; };
+		36EF531129914BEA20791C95 /* ReaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderViewModel.swift; sourceTree = "<group>"; };
+		B502BE76A6D2FC57679FC6B9 /* ReaderSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderSettingsView.swift; sourceTree = "<group>"; };
+		84A0EFB1C36D8AF59AD025EE /* LinkedSourceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedSourceRow.swift; sourceTree = "<group>"; };
+		0F538B934B52B1E070026A05 /* SourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesView.swift; sourceTree = "<group>"; };
+		C202E3B87DFF1BF3F968801B /* SourcesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesViewModel.swift; sourceTree = "<group>"; };
+		E6BA79C149EA9B3B3033120D /* DatabaseRequiredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseRequiredView.swift; sourceTree = "<group>"; };
+		D6CFB2F8C6DC925E9075C3CB /* ErrorStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorStateView.swift; sourceTree = "<group>"; };
+		10B50CF0A99B2FC9518A1FFA /* LoadingStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingStateView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36E2D336F4D2831692B077F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C999E731352905727541C3C = {
+			isa = PBXGroup;
+			children = (
+				AFB6742B3522322D19E795C6 /* OtsariaReader */,
+				6D159F361021D92BC3E10E55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D159F361021D92BC3E10E55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8781C570CE2D0B6A18F2DECF /* OtsariaReader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFB6742B3522322D19E795C6 /* OtsariaReader */ = {
+			isa = PBXGroup;
+			children = (
+				3AF79462349B414BE5138EB6 /* App */,
+				91BDCF5F45A927EAF393730B /* SharedUI */,
+			);
+			path = OtsariaReader;
+			sourceTree = "<group>";
+		};
+		3AF79462349B414BE5138EB6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0F51C0A4D17EAE1A45DD36BC /* AppContainer.swift */,
+				59AF68BBDCE2B87548FC2266 /* OtsariaReaderApp.swift */,
+				987CBFD8FC636EBAAA8AA115 /* RootSplitView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		91BDCF5F45A927EAF393730B /* SharedUI */ = {
+			isa = PBXGroup;
+			children = (
+				E6BA79C149EA9B3B3033120D /* DatabaseRequiredView.swift */,
+				D6CFB2F8C6DC925E9075C3CB /* ErrorStateView.swift */,
+				10B50CF0A99B2FC9518A1FFA /* LoadingStateView.swift */,
+			);
+			path = SharedUI;
+			sourceTree = "<group>";
+		};
+		DFF60CD2A6496CB3C6D1AE61 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				043EE376171F683381CCEB61 /* SQLiteConnection.swift */,
+				CF605CA33D0D77B15374A77C /* SQLiteError.swift */,
+				E08F7825C9E23CC016DDA4F3 /* SQLiteStatement.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		6D0367B3713F2E55F084F311 /* FileAccess */ = {
+			isa = PBXGroup;
+			children = (
+				73D528E56BC0085165106B6A /* SecurityScopedAccess.swift */,
+				757505CC16129C55EA607100 /* SecurityScopedBookmarkStore.swift */,
+			);
+			path = FileAccess;
+			sourceTree = "<group>";
+		};
+		FE6E5434C0590BACE5554880 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				95F0FFE33E2EF75A45ABA489 /* String+OtsariaText.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		95229DBCA2E08BC48DF62027 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				47D72A9882280D5697246B96 /* UTType+SQLite.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		59EBECDF5686E1FCBE5B7945 /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				159D7D3932B7EF397A871148 /* OtsariaSchema.swift */,
+				A309A0949A6744CF0A83BCE7 /* SQLiteBookTextRepository.swift */,
+				B23DA49088662E9035201E6A /* SQLiteLibraryRepository.swift */,
+				763F28D15202EA4E34FDD551 /* SQLiteSourceRepository.swift */,
+			);
+			path = SQLite;
+			sourceTree = "<group>";
+		};
+		91847EC4A18C6F861D6F2F4E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5553D90B14C9A70D7C0796D /* Book.swift */,
+				482B532F7AEDA5BDBE8FE4C4 /* BookLine.swift */,
+				E1ECCF298142CE569B1EDD9E /* LibraryCategory.swift */,
+				86DEC535F6A4F71B3B0FEED2 /* LibraryNode.swift */,
+				73E44C2402DE24D27539FA8B /* LinkedSource.swift */,
+				EE8C16AA07BB4B813C48A333 /* SourceSection.swift */,
+				13DADB776371CD14C65A781B /* TOCEntry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ED88098326D456C4CAD56FE8 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				F3F91564E3BAA70877B03645 /* BookTextRepository.swift */,
+				1113748EFDFDCB1623FFC245 /* LibraryRepository.swift */,
+				D1AF37B012CC532F7B4AFF3C /* SourceRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		5392059FB2614C67902A3625 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				E1E23EF3429A44DB1720A3BF /* BookResultRow.swift */,
+				7D26A01618D16CF0EBE09A53 /* LibraryNodeRow.swift */,
+				04345AE0E3166AFDB2304D85 /* LibraryView.swift */,
+				CD276371D486D7D071F821B0 /* LibraryViewModel.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		0A1F23178CDBE063A54D09C7 /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				CEB49C7E803EBD6DAA9FDF9F /* ReaderLineRow.swift */,
+				EEFBA316E5E313013C63D49C /* ReaderPlaceholderView.swift */,
+				250861F014EC4B1C412F5972 /* ReaderView.swift */,
+				36EF531129914BEA20791C95 /* ReaderViewModel.swift */,
+			);
+			path = Reader;
+			sourceTree = "<group>";
+		};
+		CD899F6BD54C0C0AAE0FA462 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B502BE76A6D2FC57679FC6B9 /* ReaderSettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		25677614821B60C6AD1A1398 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				84A0EFB1C36D8AF59AD025EE /* LinkedSourceRow.swift */,
+				0F538B934B52B1E070026A05 /* SourcesView.swift */,
+				C202E3B87DFF1BF3F968801B /* SourcesViewModel.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39CBB80239C4607964ACEB9A /* OtsariaReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCBA909DEA747C22C71114CD /* Build configuration list for PBXNativeTarget "OtsariaReader" */;
+			buildPhases = (
+				DE6EE531638FBF802B9F50F8 /* Sources */,
+				36E2D336F4D2831692B077F8 /* Frameworks */,
+				505DCE76C480DFFAA8952713 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OtsariaReader;
+			productName = OtsariaReader;
+			productReference = 8781C570CE2D0B6A18F2DECF /* OtsariaReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CD759D4193846E4910FD9BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					39CBB80239C4607964ACEB9A = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 344629A1E4F899A26953FBED /* Build configuration list for PBXProject "OtsariaReader" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5C999E731352905727541C3C;
+			productRefGroup = 6D159F361021D92BC3E10E55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39CBB80239C4607964ACEB9A /* OtsariaReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		505DCE76C480DFFAA8952713 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE6EE531638FBF802B9F50F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7200C3755505B4C571DF7407 /* AppContainer.swift in Sources */,
+				6DB8AA8873252113169525A0 /* OtsariaReaderApp.swift in Sources */,
+				0C34AD49B0187F414759668B /* RootSplitView.swift in Sources */,
+				66131F1F0E9DA0FBE8926059 /* SQLiteConnection.swift in Sources */,
+				5A2DB528A4ACADF04668BB0F /* SQLiteError.swift in Sources */,
+				9150D1C40E1B4226A035770C /* SQLiteStatement.swift in Sources */,
+				A08467F008A575205B19E0AF /* SecurityScopedAccess.swift in Sources */,
+				D5307EC4ADB90AD40691571A /* SecurityScopedBookmarkStore.swift in Sources */,
+				5554E7A18A235E88131469B1 /* String+OtsariaText.swift in Sources */,
+				570984899AF2D98023229B64 /* UTType+SQLite.swift in Sources */,
+				8A6AE09932EE7F4E3880B5DD /* OtsariaSchema.swift in Sources */,
+				315695758242BCF124584023 /* SQLiteBookTextRepository.swift in Sources */,
+				4DF2040F99FD143A2D93F78F /* SQLiteLibraryRepository.swift in Sources */,
+				4F37EFA11DE16FA9872A93B9 /* SQLiteSourceRepository.swift in Sources */,
+				8E8E30CBF8D13C9CD7CBB4F5 /* Book.swift in Sources */,
+				77C87025767DE2AB23DD5928 /* BookLine.swift in Sources */,
+				F99189358B3C56B7F53424FC /* LibraryCategory.swift in Sources */,
+				6B71EA92B816D7ADEF0EA219 /* LibraryNode.swift in Sources */,
+				B965EB7ABD2F9A55A1B6F372 /* LinkedSource.swift in Sources */,
+				AF28122A0D6AF7CA34B71F8E /* SourceSection.swift in Sources */,
+				DB3F7E9BEC83030634AFF0FE /* TOCEntry.swift in Sources */,
+				932EDEAB51E8FCEE0D737EFE /* BookTextRepository.swift in Sources */,
+				545D37B9CE32E0A10AB13C25 /* LibraryRepository.swift in Sources */,
+				A9EC62E6F56525E7CE660FDF /* SourceRepository.swift in Sources */,
+				5A1BBDD0084FBEC935DD0379 /* BookResultRow.swift in Sources */,
+				620B5E61B64C300BA5A0FFBE /* LibraryNodeRow.swift in Sources */,
+				1C9BAEF32226C146BA982F91 /* LibraryView.swift in Sources */,
+				8E5B4550801F0FC26543B3BE /* LibraryViewModel.swift in Sources */,
+				7DC1C9B2FB80A9067E07633C /* ReaderLineRow.swift in Sources */,
+				C140BD6D6347D033796CB554 /* ReaderPlaceholderView.swift in Sources */,
+				397777D2C4F702094243DCAC /* ReaderView.swift in Sources */,
+				EB703099CEF12080CC8D3E50 /* ReaderViewModel.swift in Sources */,
+				8417260C742137BED6EAA41F /* ReaderSettingsView.swift in Sources */,
+				3110DF51312ACF39CB3979B5 /* LinkedSourceRow.swift in Sources */,
+				39A2B85E8326C213BF802D54 /* SourcesView.swift in Sources */,
+				67F095C3DC9C8AA1534E6671 /* SourcesViewModel.swift in Sources */,
+				37E5194AD5A5E1834C9B2581 /* DatabaseRequiredView.swift in Sources */,
+				26C313C6A850131AB34DD079 /* ErrorStateView.swift in Sources */,
+				C43E9C03CF7DB1B8255B7601 /* LoadingStateView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3590F05C2ABF90E768D63BD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1 $(inherited)";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = -Onone;
+			};
+			name = Debug;
+		};
+		FB6B65DE7C93748122CA2848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = -O;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2873A659FDF19DF40489ED8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "אוצריא Reader";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				OTHER_LDFLAGS = "-lsqlite3";
+				PRODUCT_BUNDLE_IDENTIFIER = com.goldcreative.otsariareader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6FB96530518CFD57EDFF8597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "אוצריא Reader";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				OTHER_LDFLAGS = "-lsqlite3";
+				PRODUCT_BUNDLE_IDENTIFIER = com.goldcreative.otsariareader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		344629A1E4F899A26953FBED /* Build configuration list for PBXProject "OtsariaReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3590F05C2ABF90E768D63BD2 /* Debug */,
+				FB6B65DE7C93748122CA2848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCBA909DEA747C22C71114CD /* Build configuration list for PBXNativeTarget "OtsariaReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2873A659FDF19DF40489ED8D /* Debug */,
+				6FB96530518CFD57EDFF8597 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5CD759D4193846E4910FD9BB /* Project object */;
+}

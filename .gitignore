@@ -1,0 +1,10 @@
+.DS_Store
+xcuserdata/
+DerivedData/
+.build/
+*.xcuserstate
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm
