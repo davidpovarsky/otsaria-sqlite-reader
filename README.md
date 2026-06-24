@@ -55,6 +55,35 @@ The file is opened read-only and query-only. On first launch choose `seforim.db`
 - Open a native sources/commentary inspector for the selected line.
 - Basic reader settings: font size, line spacing, Hebrew reference visibility.
 
+## Build scripts
+
+The repository includes local scripts under `scripts/`:
+
+```bash
+bash scripts/doctor.sh
+bash scripts/build.sh
+XCODE_DEVELOPMENT_TEAM=YOUR_TEAM_ID bash scripts/archive.sh
+XCODE_DEVELOPMENT_TEAM=YOUR_TEAM_ID bash scripts/export-ipa.sh development
+```
+
+The scripts write full logs to `build/logs/`. When an error happens, they print a compact block headed by `COPY THIS ERROR SUMMARY`; copy that block when reporting build problems.
+
+Full instructions are in:
+
+```text
+Docs/BuildAndExportIPA.md
+```
+
+## CI
+
+A GitHub Actions workflow builds the app for the iOS Simulator on macOS and uploads build logs as an artifact:
+
+```text
+.github/workflows/ios-build.yml
+```
+
+IPA export is intentionally local because it requires Apple signing certificates, provisioning profiles, and a valid Apple Developer account.
+
 ## Notes
 
-This ZIP is a clean starter project. It is not committed to GitHub automatically; unzip it and push it to the repository when ready.
+This is a clean starter project for a native iOS/iPadOS reader. It does not bundle `seforim.db`; the user picks the database file from Files/iCloud Drive.
