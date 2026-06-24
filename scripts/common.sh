@@ -4,6 +4,7 @@ set -Eeuo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
 PROJECT_PATH="${PROJECT_PATH:-${ROOT_DIR}/OtsariaReader.xcodeproj}"
+PROJECT_FILE="${PROJECT_PATH}/project.pbxproj"
 SCHEME="${SCHEME:-OtsariaReader}"
 CONFIGURATION="${CONFIGURATION:-Release}"
 DERIVED_DATA_PATH="${DERIVED_DATA_PATH:-${ROOT_DIR}/build/DerivedData}"
@@ -30,6 +31,24 @@ fail() {
 require_command() {
   command -v "$1" >/dev/null 2>&1 || fail "Missing required command: $1"
 }
+
+repair_xcode_project_if_needed() {
+  [ -f "${PROJECT_FILE}" ] || return 0
+
+  if grep -q 'DEVELOPMENT_TEAM = ;' "${PROJECT_FILE}"; then
+    log "Repairing empty DEVELOPMENT_TEAM entries in ${PROJECT_FILE}"
+    python3 - "${PROJECT_FILE}" <<'PY'
+from pathlib import Path
+import sys
+path = Path(sys.argv[1])
+text = path.read_text(encoding="utf-8")
+text = text.replace("DEVELOPMENT_TEAM = ;", "DEVELOPMENT_TEAM = \"\";")
+path.write_text(text, encoding="utf-8")
+PY
+  fi
+}
+
+repair_xcode_project_if_needed
 
 print_environment() {
   log "Repository: ${ROOT_DIR}"
