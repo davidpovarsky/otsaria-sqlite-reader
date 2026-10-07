@@ -6,7 +6,6 @@ on:
       - "iOS build"
       - "iOS unsigned IPA"
     types:
-      - requested
       - in_progress
       - completed
 
